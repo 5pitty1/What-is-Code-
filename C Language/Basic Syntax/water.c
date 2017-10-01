@@ -6,10 +6,12 @@
 */
 int main(void) {
 
-    //Gets number of minutes
-    printf("minutes: \n");
     int mins;
-    scanf("%d\n", &mins);
+    //Gets number of minutes
+    do {
+        printf("minutes: \n");
+        scanf("%d\n", &mins);
+    } while (mins <= 0);
 
     //converts minutes to bottles of water
     printf("bottles: %i\n", mins * 12);
