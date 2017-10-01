@@ -14,11 +14,12 @@ int main(void) {
     fgets(name, 80, stdin);
 
     //prints the very first letter as an uppercase
-    printf("%c", toupper(name[0]));
+    if(isalpha(name[0]))
+        printf("%c", toupper(name[0]));
 
     //finds every letter that comes after a space and prints them
     for(int i = 1; i < strlen(name); i++) {
-        if(name[i] == ' '){
+        if(name[i] == ' ' && isalpha(name[i+1])){
             printf("%c", toupper(name[i+1]));
         }
     }
