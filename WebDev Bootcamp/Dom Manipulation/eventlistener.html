@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<button>CLICK ME</button>
+</body>
+
+<script>
+	btn = document.querySelector("button")
+	body = document.querySelector("body")
+	btn.addEventListener("click", function () {
+		body.style.background = body.style.background == "white" ? "red" : "white"
+	})
+</script>
+
+</html>

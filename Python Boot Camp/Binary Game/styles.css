@@ -1,0 +1,37 @@
+#numbers {
+    display: inline-table;
+}
+
+#numbers div, #digits div{
+    width: 250px;
+    height: 250px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#digits div {
+    background-color: rgb(66,133,244);
+    border: 1px solid black;
+}
+
+#digits div:hover {
+    opacity: .8;
+}
+
+#get-random {
+    width: 2000px;
+    height: 150px;
+    background-color: rgba(66,133,244, .5);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#get-random:hover {
+    opacity: .5;
+}

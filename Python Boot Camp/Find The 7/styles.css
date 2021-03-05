@@ -1,0 +1,39 @@
+#mainContainer {
+    height: calc(100vh - 150px);
+    display: table-cell;
+    vertical-align: middle;
+}
+#digits {
+    color: white;
+}
+#digits>div{
+    width: 250px;
+    height: 250px;
+    display: table-cell;
+    background-color: rgb(66,133,244);
+    border: 5px solid white;
+    vertical-align: middle;
+    transition: .6s;
+    transform-style: preserve-3d;
+}
+
+#digits>div {
+    transform-style: preserve-3d;
+}
+.flip {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    width: 50px;
+    font-size: 50px;
+    font-family: sans-serif;
+    top: 96px;
+    left: calc(50% - 25px);
+}
+.face.back {
+    transform: rotateY(180deg);
+}

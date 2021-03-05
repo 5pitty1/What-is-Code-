@@ -1,0 +1,9 @@
+{
+	"typeAcquisition": {
+		"include": [
+			"node",
+			"ejs",
+			"axios"
+		]
+	}
+}
